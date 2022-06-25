@@ -1,11 +1,11 @@
-Writing list comprehensions
+'''Writing list comprehensions'''
 
 # Create list comprehension: squares
 squares = [i**2 for i in range(0,10)]
 print(squares)
 
 ///
-Nested list comprehensions
+'''Nested list comprehensions'''
 
 # Create a 5 x 5 matrix using a list of lists: matrix
 matrix = [[col for col in range(0,5)] for row in range(0,5)]
@@ -15,7 +15,7 @@ for row in matrix:
     print(row)
     
 ///
-Using conditionals in comprehensions
+'''Using conditionals in comprehensions'''
 
 # Create a list of strings: fellowship
 fellowship = ['frodo', 'samwise', 'merry', 'aragorn', 'legolas', 'boromir', 'gimli']
@@ -38,7 +38,7 @@ new_fellowship = [member if len(member)>=7 else "" for member in fellowship]
 print(new_fellowship)
 
 ///
-Dict comprehensions
+'''Dict comprehensions'''
 
 # Create a list of strings: fellowship
 fellowship = ['frodo', 'samwise', 'merry', 'aragorn', 'legolas', 'boromir', 'gimli']
@@ -50,7 +50,7 @@ new_fellowship = {member: len(member) for member in fellowship}
 print(new_fellowship)
 
 ///
-Write your own generator expressions
+'''Write your own generator expressions'''
 
 # Create generator object: result
 result = (num for num in range(31))
@@ -67,7 +67,7 @@ for value in result:
     print(value)
     
 ///
-Changing the output in generator expressions
+'''Changing the output in generator expressions'''
 
 # Create a list of strings: lannister
 lannister = ['cersei', 'jaime', 'tywin', 'tyrion', 'joffrey']
@@ -80,7 +80,7 @@ for value in lengths:
     print(value)
     
 ///
-Build a generator
+'''Build a generator'''
 
 # Create a list of strings
 lannister = ['cersei', 'jaime', 'tywin', 'tyrion', 'joffrey']
