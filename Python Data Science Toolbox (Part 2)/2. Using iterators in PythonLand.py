@@ -1,4 +1,4 @@
-Iterating over iterables
+'''Iterating over iterables'''
 
 # Create a list of strings: flash
 flash = ['jay garrick', 'barry allen', 'wally west', 'bart allen']
@@ -43,7 +43,7 @@ print(next(googol))
 print(next(googol))
 
 ///
-Iterators as function arguments
+'''Iterators as function arguments'''
 
 # Create a range object: values
 values = range(10,21)
@@ -64,7 +64,7 @@ values_sum = sum(values)
 print(values_sum)
 
 ///
-Using enumerate
+'''Using enumerate'''
 
 # Create a list of strings: mutants
 mutants = ['charles xavier', 
@@ -88,7 +88,7 @@ for index2, value2 in enumerate(mutants,start=1):
     print(index2, value2)
     
 ///
-Using zip
+'''Using zip'''
 
 # Create a list of tuples: mutant_data
 mutant_data = list(zip(mutants,aliases,powers))
@@ -125,7 +125,7 @@ print(result1 == mutants)
 print(result2 == powers)
 
 ///
-Processing large amounts of Twitter data
+'''Processing large amounts of Twitter data'''
 
 # Initialize an empty dictionary: counts_dict
 counts_dict={}
